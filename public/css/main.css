@@ -1,0 +1,393 @@
+body{
+  background-color: /*#e6e6e6a8*/white;
+}
+
+/*.header{
+  background-color: #71318ed9;
+}*/
+
+.info{
+  color: black;
+   background-color: transparent;
+}
+.info2{
+   background-color: /*#2f8c44*/#8e8e8e;
+}
+
+.infofo{
+  background-color: #f7f7f7;
+}
+
+.social-ico{
+	color: black;
+}
+
+
+/* Style the navbars */
+#navbars {
+  overflow: hidden;
+  transition:all .5s ;
+  background-color: #282828;
+}
+
+/* Navbars links */
+#navbars a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbars with JS when it reaches its scroll position */
+.sticky {
+  transition:all 2s ;
+  background: #34343482 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+.sectionbotonshop{
+
+  /*background-image: linear-gradient(to bottom, #35a19cc7,#35a19c),
+url(../img/tienda.jpg);*/
+background-image:linear-gradient(to bottom, #2d2d2dd9,#3a3839eb),
+url(../img/tienda.jpg);
+background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+
+
+
+
+
+
+.imgr{
+  border-radius: 10px;
+  transition:all .5s ease-in-out;
+}
+
+
+.contenimg:hover .imgr {
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+  transition:all .5s ease-in-out;
+}
+.contenimg {
+  overflow:hidden;
+  
+}
+
+
+
+
+
+.titem{
+color: #71318e;
+}
+
+
+
+.footer{
+	background-color: #343434;
+	color:white;
+}
+.footerdos{
+	background-color: #343434e6;
+	color:white;
+}
+
+
+.itemnav:hover{
+  padding: 20px !important;
+    transition: all 1s;
+    background-color: #565656;
+    border-radius: 5px;
+    font-size: 25px;
+    box-shadow: 0px 3px 8px 3px #00000057;
+}
+.itemnav{
+  transition: all 2s;
+  font-size: 20px;
+  
+}
+
+
+
+.imgr{
+  border-radius: 10px;
+  transition:all .5s ease-in-out;
+}
+
+
+.contenimg:hover .imgr {
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+  transition:all .5s ease-in-out;
+}
+.contenimg {
+  overflow:hidden;
+  
+}
+
+
+
+
+
+.titem{
+color: #71318e;
+}
+
+
+
+
+
+/******************************************************
+                      MIS CSS 2020
+*******************************************************/
+
+
+.menucards{
+	background-color: #e6e6e6; 
+	padding: 20px;
+	transition:all 1s;
+}
+
+
+.menucards:hover{
+	background-color: #909090; 
+	color: white;
+	padding: 20px;
+}
+
+.btnshop{
+	padding: 15px;
+    background-color: #e43737;
+    color: white;
+    /*border-color: white;*/
+    box-shadow: 0px 3px 8px 3px #b52c2c;
+transition: 1s;
+}
+
+.btnshop:hover{
+  padding: 15px;
+  background-color: #e43737;
+  color: white;
+   transform:translate(0px, 10px);
+  transition: 1s;
+}
+
+
+.seccionmarcas{
+  background-image:linear-gradient(to bottom, #2d2d2dd9,#3a3839eb),
+url(../img/tienda.jpg);
+background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.imgmarca{
+
+  transition: all 1s;
+  width: 150px;
+  height: 150px;
+  box-shadow:-1px 5px 2px 0px #000000;
+  background-color: #c5c5c529;
+}
+
+.imgmarca:hover{
+  
+  transition: all 1s;
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  box-shadow: 0px -7px 20px 11px #000000;
+}
+
+
+/**************************************************
+           ANIMACIONES 
+***************************************************/
+
+.eslaider{
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+.eslaiderdos{
+  animation-duration: 5s;
+  animation-name: slideindos;
+}
+
+.menusanimacion{
+animation-duration: 3s;
+  animation-name: menusanimacion;
+
+}
+
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideindos {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes menusanimacion {
+  from {
+    margin-top : 100%;
+    width: 300%
+  }
+
+  to {
+    margin-top : 0%;
+    width: 100%;
+  }
+
+}
+
+  /**********************************************
+          Secciones
+  **********************************************/
+
+.fondocarrusel{
+
+  background-image: url(../img/banner/b1.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+ animation-duration: 15s;
+  animation-name: cambiobanner;
+  animation-iteration-count: infinite;
+  transition:all 3s;
+  
+  
+}
+
+
+@keyframes cambiobanner {
+  
+   0% {
+   background-image: url(../img/banner/b1.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  
+
+  20% {
+   background-image: url(../img/banner/b2.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  40% {
+   background-image: url(../img/banner/b3.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  60% {
+   background-image: url(../img/banner/b4.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  80% {
+    background-image: url(../img/banner/b5.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  100% {
+    background-image: url(../img/banner/b1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+}
+/*****************************************
+           SECCION TAPIZ
+******************************************/
+
+/*.contapiz{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+*/
+.imgtapiz{
+  width: 100%;
+  height: 100%;
+}
+
+.overlayv{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: white;
+}
+
+.contapiz:hover .overlayv{
+  opacity: 1;
+}
+
+.icon{
+
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}

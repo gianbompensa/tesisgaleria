@@ -1,0 +1,767 @@
+body{
+  background-color: #f3eeee;
+}
+
+
+.card-admin{
+  color: white;
+  background-color: #3b4a63;
+  transition: all .5s;
+}
+
+.card-admin:hover{
+  background-color: #3b4a63;
+    box-shadow: 0px 4px 8px 1px #1d3c6f;
+    transition: all .3s;
+}
+
+
+/* Style the navbars */
+#navbars {
+  overflow: hidden;
+  transition:all .5s ;
+  background-image: linear-gradient(to bottom right, #163363, #26b18a);
+}
+
+/* Navbars links */
+#navbars a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbars with JS when it reaches its scroll position */
+.sticky {
+  transition:all 2s ;
+  background: #000000a1 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.bannerhome{
+  background-image: url(../img/banner.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.searchbarv{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #1b5d70;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_inputv{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbarv:hover > .search_inputv{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbarv:hover > .search_iconv{
+    background: white;
+    color: #1d3c6f;
+    }
+
+    .search_iconv{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+
+    .cartaca{
+      border: 1px solid #989898 !important;
+      transition: all .5s;
+    }
+
+    .cartaca:hover{
+      border: 1px solid #989898 !important;
+      box-shadow: 0px 3px 6px 3px #5e5e5e;
+      transition: all .5s;
+    }
+
+
+
+
+
+
+
+
+.nav-corsetti{
+	background-color: #bd3331 !important;
+	color: #e2d7d7 !important;
+}
+
+
+
+
+.item-corsetti{
+
+	font-family: 'Source Sans Variable', sans-serif; font-weight: lighter;
+    border-right: 1px solid #173b66;
+    font-size: 15px;
+    color: #e2d7d7;
+    transition: all 0.5s ease-out;
+}
+.item-corsetti:hover{
+
+	font-family: 'Source Sans Variable', sans-serif;
+    font-weight: lighter;
+    border-right: 1px solid #173b66;
+    font-size: 17px;
+    color: #e2d7d7;
+    background-color: #1e7176;
+    transition: all 0.5s ease-out;
+}
+
+.itemsub-corsetti{
+
+	font-family: 'Source Sans Variable', sans-serif; font-weight: lighter;
+    
+    font-size: 11px;
+    color: #c59292;
+    transition: all 0.5s ease-out;
+}
+
+.itemsub-corsetti:hover{
+
+	font-family: 'Source Sans Variable', sans-serif; font-weight: lighter;
+  
+    font-size: 11px;
+    color: #c59292;
+    background-color: #a21d19;
+    transition: all 0.5s ease-out;
+}
+
+/**************************** FONDO DE  BANNER *************************/
+
+/*.banner{
+	background-image: url(../img/home/banner.jpeg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}*/
+
+.banner{
+
+  background-image: url(../img/home/banner.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+ animation-duration: 15s;
+  animation-name: cambiobanner;
+  animation-iteration-count: infinite;
+  transition:all 0.5s;
+  
+  
+}
+
+
+@keyframes cambiobanner {
+
+  20% {
+   background-image: url(../img/home/banner.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition:all 0.5s;
+  }
+  
+   50% {
+   background-image: url(../img/home/banner2.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition:all 0.5s;
+  }
+  
+
+  100% {
+   background-image: url(../img/home/banner3.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition:all 0.5s;
+  }
+
+}
+
+
+
+
+/**************************** FIN FONDO DE  BANNER *************************/
+.col-i-corsetti{
+	border: 2px solid gray;
+}
+
+.btn-corsetti{
+	border-radius: 4px;
+    padding: 5px;
+    color: white;
+    background-color: #c82a27;
+    font-size: 13px;
+
+}
+
+.btn-corsetti:hover{
+  text-decoration: none;
+  border-radius: 4px;
+    padding: 5px;
+    color: white;
+    background-color: #c82a27;
+    font-size: 13px;
+
+}
+
+.btn-contacta{
+  position: absolute;
+    z-index: 1;
+    margin-top: 35%;
+    margin-left: -85%;
+  text-decoration: none;
+    padding: 10px;
+    border: 1px solid;
+    color: white;
+    background-color: #e2e2e221;
+    font-size: 15px 30px;
+}
+.btn-contacta:hover{
+  position: absolute;
+    z-index: 1;
+    margin-top: 35%;
+    margin-left: -85%;
+  text-decoration: none;
+    padding: 10px;
+    border: 1px solid;
+    color: white;
+    background-color: #e2e2e221;
+    font-size: 15px 30px;
+}
+
+.btn-cor{
+  background: #bd3331;
+    padding: 6px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+    transition: all 1s;
+
+}
+
+.btn-cor:hover{
+  background: #bd3331;
+    padding: 6px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+    transition: all 1s;
+
+}
+
+.visitien{
+  color: white;
+  transition: all 1s ;
+  text-decoration: none;
+
+}
+
+.visitien:hover{
+  
+  text-decoration: none;
+  color: white;
+  transition: all 1s ;
+}
+
+.abcorsetti{
+	
+	
+	color :#c82a27;
+}
+
+
+@media (min-width: 700px){
+
+
+.abcorsetti{
+	
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	color :#c82a27;
+}
+.abcorsetti::after,.abcorsetti::before{
+	
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 3px;
+	background-color: currentColor;
+	top:0.6em;
+}
+
+.abcorsetti::before{	
+	left:110%;	
+}
+
+.abcorsetti::after{	
+	right:110%;	
+}
+
+
+
+}
+
+.abtapiz{
+  
+  
+  color :#c82a27;
+}
+
+
+@media (min-width: 700px){
+
+
+.abtapiz{
+  
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color :#c82a27;
+}
+.abtapiz::after,.abtapiz::before{
+  
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background-color: currentColor;
+  top:0.6em;
+}
+
+.abtapiz::before{  
+  left:110%;  
+}
+
+.abtapiz::after{ 
+  right:110%; 
+}
+
+
+
+}
+
+
+
+
+
+
+fieldset {
+	background-color: white;
+	border: 2px solid #c82a27;
+	border-radius: 0px;
+}
+
+legend {
+	background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 0px;
+    color: #c82a27;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 3px 5px 3px 7px;
+    width: auto;
+}
+
+
+.nwork-corsetti{
+  background-image: url(../img/home/work.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.casa-corsetti{
+  background-image: url(../img/pinturas/casa.jpg);
+   /*background-position: center center;*/
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@media (min-width: 700px){
+.casa-corsetti{
+  background-image: url(../img/pinturas/casa.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 5rem !important;
+   padding-bottom: 5rem !important;
+}
+
+
+}
+
+
+
+
+.contenedor{
+
+	text-align: center;
+}
+.left-corsetti{
+	float:left;
+	display: inline-block;
+	background-color: red;
+}
+.right-corsetti{
+	float:right;
+	display: inline-block;
+	background-color: red;
+}
+
+.footer{
+
+	 background-image: linear-gradient(to bottom right, #163363, #26b18a);
+}
+.footer2{
+	border-top: 1px solid white;
+	 background-image: linear-gradient(to bottom right, #163363, #26b18a);
+}
+
+.social-corsetti{
+	color: white;
+	padding-right: 15px;
+}
+
+.social-corsetti:hover{
+	color: #e2e2e2;
+	padding-right: 15px;
+}
+
+
+/***********************************************************************
+                     ROLLERSSS
+************************************************************************/
+
+
+
+.verde{
+  background-image: url(../img/rollers/verde.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.vermasr{
+   background-image: url(../img/rollers/vermas.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.btn-vmr{
+  background: #ffffff70;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: #4a413c;
+    transition: all 1s;
+}
+.btn-vmr:hover{
+  transition: all 1s;
+  background: #ffffff3b;
+     padding: 3px 5px;
+    text-decoration: none;
+    border: 2px solid #696461;
+    color: #456361;
+}
+
+.obtenaseoria{
+   background: #ffffffb5;
+    padding: 5px 12px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: #4a413c;
+    transition: all 1s;
+}
+
+.obtenaseoria:hover{
+   background: #ffffffb5;
+    padding: 5px 12px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: #4a413c;
+    transition: all 1s;
+}
+
+
+/***********************************************************************
+                    TAPIZZ
+************************************************************************/
+
+
+/* contend_tapiz needed to position the aparicion. Adjust the width as needed */
+.contend_tapiz {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the img_aparicion to responsive */
+.img_aparicion {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The aparicion effect - lays on top of the contend_tapiz and over the img_aparicion */
+.aparicion {
+    position: absolute;
+    top:0;
+    background: rgb(0, 0, 0);
+    background: #9e0c0cd6;
+    color: #820202cc;
+    width: 88%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+   font-weight: bold;
+    font-size: 35px;
+    padding: 15% 0 30% 0%;
+    text-align: center;
+    height: 20%;
+}
+
+.aparicionb {
+    position: absolute;
+    bottom:0;
+    background: rgb(0, 0, 0);
+    background: #9e0c0cd6;
+    color: #820202cc;
+    width: 88%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+   font-weight: bold;
+    font-size: 35px;
+    padding: 15% 0 30% 0%;
+    text-align: center;
+    height: 20%;
+}
+
+
+/* When you mouse over the contend_tapiz, fade in the aparicion title */
+.contend_tapiz:hover .aparicion{
+  opacity: 1;
+}
+.contend_tapiz:hover .aparicionb{
+  opacity: 1;
+}
+
+
+/********************************************************
+       ECOPMMERCE 
+*********************************************************/
+
+.inputsel{
+  border: solid 1px #bd3331 !important;
+    background: #bd333100 !important;
+}
+
+.inputsel:active{
+  box-shadow: 10px 10px 10px 10px #1d3c6f;
+  border: solid 1px #bd3331 !important;
+    background: #bd333100 !important;
+}
+
+.inputsel:focus{
+  box-shadow: 0 0 6px 0px #bd3331;
+    border: solid 1px #bd3331 !important;
+    background: #bd333100 !important;
+}
+
+.btnc-search{
+  background-color: red;
+}
+
+/* contend_tapiz needed to position the aparicion. Adjust the width as needed */
+.contend_ecom {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the img_aparicion to responsive */
+.img_apecom {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.apecom {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: #ffffff6b;
+    color: #ffffff9e;
+    width: 90%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #1d3c6f;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 5% 0 10% 0%;
+    text-align: center;
+    height: 20%;
+    letter-spacing: 1px;
+
+}
+
+
+/* When you mouse over the contend_tapiz, fade in the aparicion title */
+
+.contend_ecom:hover .apecom{
+  opacity: 1;
+}
+
+
+
+.btn-ecom{
+
+  background-color: #dedede;
+  color: #5f5454;
+
+}
+
+.btn-ecom:hover{
+
+  background-color: #ccc3c3;
+    color: #583838;
+}
+
+.card-product{
+  background: #efefef;
+  transition: all .1s;
+  margin-top: 10px;
+}
+.card-product:hover{
+  background: #efefef;
+    transition: all .1s;
+margin-top: 10px;
+}
+
+.fondogris{
+  background:#dedede; 
+}
+
+
+
+/****************************************************
+              CAMBIO DE BANNER TRANSITIONS
+********************************************************/
+
+.fondocarrusel{
+
+  background-image: url(../img/banner1.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+ animation-duration: 15s;
+  animation-name: cambiobanner;
+  animation-iteration-count: infinite;
+  transition:all 3s;
+  
+  
+}
+
+
+@keyframes cambiobanner {
+  
+   0% {
+   background-image: url(../img/banner2.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  
+
+  20% {
+   background-image: url(../img/banner3.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  40% {
+   background-image: url(../img/banner4.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  60% {
+   background-image: url(../img/banner3.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  80% {
+    background-image: url(../img/banner2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+  100% {
+    background-image: url(../img/banner4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+}
